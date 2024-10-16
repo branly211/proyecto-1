@@ -1,0 +1,20 @@
+None
+
+
+meme_dict = {
+            "XD": "Una respuesta común a algo gracioso",
+            "CRINGE": "Algo vergozoso",
+            "CHIDO":"Algo bonito",
+            "WTF":"Muy impresionado",
+            "CREEPY":"ALGO ATERRADOR"
+            }
+
+for i in range(5):
+    word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
+    if word in meme_dict.keys():
+        print("Esta es la definición de la palabra: ",meme_dict[word])
+        
+    # ¿Qué debemos hacer si se encuentra la palabra?
+    else:
+        print('No se encuetra esta palabra')
+    # ¿Qué hacer si no se encuentra la palabra?
