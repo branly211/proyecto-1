@@ -19,6 +19,9 @@ async def on_ready():
 async def hi(ctx):
     await ctx.send("""
     hola Bienvenido a este bot creado por creasto. """)
+    with open('M2_L2\images\mem2.png', 'rb') as f:
+       picture = discord.File(f)
+    await ctx.send(file=picture)
 
 @bot.command()
 async def normas(ctx):
@@ -31,6 +34,9 @@ async def normas(ctx):
 6 - Se prohíbe tener comportamientos molestos o hacer ruidos.
 Si quieres unas dudas sobre este bot escribe *dudas.
   """)
+    with open('M2_L2\images\mem1.jpg', 'rb') as f:
+       picture = discord.File(f)
+    await ctx.send(file=picture)
 
 
 @bot.command()
@@ -76,6 +82,10 @@ async def poke(ctx, arg):
 async def error_type(ctx, error):
     if isinstance(error, commands.errors.MissingRequiredArgument ):
         await ctx.send("tienes que pasarme un pokemon")
+
+        
+
+bot.run("")
 
 #prt2
 
